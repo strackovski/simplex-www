@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Vladimir Strackovski">
+    <title>Simplex WCM | NV3</title>
+    <link href='http://fonts.googleapis.com/css?family=Monda:400,700|Open+Sans:400italic,700,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/styles/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/fonts/font-awesome-4.1.0/css/font-awesome.css"/>
+    <link rel="stylesheet" href="assets/styles/main.css"/>
+</head>
+
+<body class="nojs">
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="download.html" title="Download">Download</a></li>
+                <li class="active"><a href="documentation.html" title="Download">Documentation</a></li>
+            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" title="Documentation"><i class="fa fa-github icon"></i></a></li>
+                    <li><a href="http://www.nv3.si" class="brand-logo" title="See more at NV3"><img src="assets/images/nv3_logo_inv_blue.png" alt="NV3"/></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="docs">
+        <div class="docs-nav">
+            <ul>
+                <li class="active"><a href="#getting-started">Getting started</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#usage">How to use</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main documentation">
+        <div class="page page03" id="getting-started">
+            <h2>Getting Started</h2>
+            <p class="small-lead">
+                With shows so fun, you'll forget they're smart. Entertain your brain... with The Numbers Game.
+                Every Wednesday on National Geographic Channel.
+                Why we do it? Because we can. Why do we climb mountains? Because they're there.
+                If you have to ask that question, you'll never truly understand the answer.
+            </p>
+        </div>
+        <div class="separator"></div>
+        <div class="page page03" id="features">
+            <h2>Features</h2>
+            <h4>Content features</h4>
+            <ul>
+                <li>Intuitive and easy to use content management and publishing</li>
+                <li>Powerful content options to customize and differentiate your work</li>
+                <li>Transparent support for multimedia content</li>
+                <li>Automatic content enrichment, classification and semantic tagging</li>
+                <li>Per-post keywords and metadata specification</li>
+            </ul>
+            <h4>Media features</h4>
+            <ul>
+                <li>Drag and drop media import supporting multifile uploads</li>
+                <li>Automatic video and image thumbnail generation</li>
+                <li>Metadata extraction for images using EXIF data (if available)</li>
+                <li>Metadata extraction for videos using ffmpeg (if available)</li>
+                <li>Automatic image watermarking if watermark is uploaded</li>
+                <li>User defined image resampling quality</li>
+                <li>Media library resampling enabled on demand</li>
+            </ul>
+            <h4>Page features</h4>
+            <ul>
+                <li>Bring structure to your web site with user-defined human friendly links</li>
+                <li>Use page queries to clearly define publishing criteria and rules for each page</li>
+                <li><em>View templates</em></li>
+            </ul>
+            <h4>Templating and theming</h4>
+            <ul>
+                <li>Supports templates written in pure PHP and Twig templating engine</li>
+                <li>Theme templates recieve data from pages, no usage-pattern regarding display is enforced</li>
+                <li>Theme upload and selection supported in UI</li>
+                <li>Create your own theme by following very few very simple rules</li>
+                <li>Theme assets (styles, scripts) are compressed and minified for maximum performance</li>
+            </ul>
+            <h4>Users and security</h4>
+            <ul>
+                <li>Multiuser support with very basic content change-tracking</li>
+                <li>Two user groups for editors and administrators with differentiating levels of access</li>
+                <li>Full user profile for each user</li>
+                <li>Support for public user registration</li>
+                <li>Secure password and credentials storage</li>
+                <li>Account activation and reactivation via email</li>
+                <li>Password reset support via email</li>
+            </ul>
+        </div>
+        <div class="separator"></div>
+        <div class="page page03" id="installation">
+            <h2 class="">Installation</h2>
+            <p>At this moment there is no friendly browser installer available, so all installations must be completed via command line:</p>
+            <ol>
+                <li>Clone or download the source files from the repository to your web server</li>
+                <li>Run composer install in the directory to which the sources have been downloaded</li>
+                <li>After Composer finishes the vendor installation it will install the Simplex application and prompt you to create the first user upon completion. If you don’t create the user, it will be generated automatically with preset values (*).</li>
+                <li>Depending upon the configuration of your web server, the Simplex application should be available at your-root/simplex-dir/admin</p></li>
+            </ol>
+            <!--<div class="code"><p></p></div>-->
+        </div>
+        <div class="separator"></div>
+        <div class="page page03" id="usage">
+
+            <h2>How to use</h2>
+            <h3>1. General usage with a preset theme</h3>
+            <p>Simplex aims to be intuitive for every web site publisher, from novice to experienced, and as such has no special manual. The general process of content publishing with Simplex consists of writing the content to be published, attaching any imported media items like images and videos and finally publishing the content by creating a page that has a user friendly URL link. No special usage patterns are enforced and everything else is optional.</p>
+            <h3>2. Uploading a ready-made theme</h3>
+            <p>To add an existing Simplex theme to your project, simply upload it in the Theme section under settings. After upload completes, you can switch to the new theme on the same screen.</p>
+            <h3>3. Creating a web site from scratch</h3>
+            <p>You can create your own unique theme for Simplex, providing you have basic knowledge of HTML and templating: a template is a text file containing data as variables that get evaluated once the template is displayed to the browser. A theme is a collection of common-style templates that together form a full web page. It is the theme, together with its templates, that defines the look and feel of your public facing web site.</p>
+            <p>Thanks to Twig support, there is no need to write a single line of pure PHP when creating your theme. The Twig manual has everything covered on templates, make sure to read it and use it as reference when creating your theme. http://twig.sensiolabs.org/doc/templates.html - Twig for Designers</p>
+            <h4>Template structure</h4>
+            <p>In this chapter it is assumed that you have a ready-made HTML template that you’d like to convert into a Simplex theme. Every Simplex theme is structured on the filesystem in the following way:</p>
+            <ul>
+                <li>
+                    <p>ThemeName</p>
+                    <ul>
+                        <li><p>assets/</p>
+                            <ul>
+                                <li>fonts/</li>
+                                <li>images/</li>
+                                <li>scripts/</li>
+                                <li>styles/</li>
+                            </ul></li>
+                        <li><p>views/</p></li>
+                        <li>masters/</li>
+                        <li>theme.xml</li>
+                        <li>theme.json</li>
+                    </ul></li>
+            </ul>
+
+            <p>The assets/ folder is pretty much self-explanatory: you put your fonts in the fonts/ dir, images in images/, etc.
+                The views folder is where your view-templates go: whatever template you put in views dir will be available as a template when creating a page. </p>
+            <p>The masters folder is for layout master templates that the templates in views folder can extend. <br>
+                Files theme.xml and theme.json hold some basic theme information: only one version is needed, not both (pick json or xml). </p>
+            <h4>Master templates and views</h4>
+            <p>There are two types of templates in Simplex: masters and views (master-template and view-template). Masters define the layout of a page acting as a frame into which view-templates are joined at run time by use of template inheritance. To learn more about this please consult Twig documentation, however a simple example is presented bellow...</p>
+            <h4>Including assets in masters</h4>
+            <p>The style and script assets for your theme are compresed and minified to the web folder for performance reasons, so when including these assets in the master templates, you should include them from the web folder, not the theme assets folder, at least for production.</p>
+            <h4>Recieving and displaying data</h4>
+            <p>The data for each page is collected and channeled to the displayed template automatically by Simplex. In every template you have access to this data array in the “data” variable. At the very least the data variable contains:</p>
+
+            <div class="datagrid">
+                <table style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Key</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>title</td>
+                            <td>Page title as defined in pages</td>
+                            <td>string</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>slug</td>
+                            <td>The generated page slug</td>
+                            <td>string</td>
+                        </tr>
+                        <tr>
+                            <td>modified</td>
+                            <td>Date and time of last page change</td>
+                            <td>DateTime</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>options</td>
+                            <td>Page options as defined in pages</td>
+                            <td>array</td>
+                        </tr>
+                        <tr>
+                            <td>query</td>
+                            <td>Results of PageQuery (optional)</td>
+                            <td>object/array</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>When you create a page through the Simplex web interface you have the ability to define a data query for that page. This query retrieves additional data such as posts or media items and sends them to the template along with the rest of the data. If a query is defined for a page, than the above data variable also contains the results for the query, available to you under key “query”.</p>
+            <h4>Handling object data types</h4>
+            <p>Special Simplex types are described in the API documentation, here only the most common are listed:</p>
+            <p><em>Post type</em></p>
+
+            <div class="datagrid">
+                <table style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="alt">
+                            <td>title</td>
+                            <td>Title</td>
+                            <td>string</td>
+                        </tr>
+                        <tr>
+                            <td>subtitle</td>
+                            <td>Subtitle</td>
+                            <td>string</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>body</td>
+                            <td>Body text</td>
+                            <td>string</td>
+                        </tr>
+                        <tr>
+                            <td>author</td>
+                            <td>Post author</td>
+                            <td>Entity\User</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>editor</td>
+                            <td>Last editor</td>
+                            <td>Entity\User</td>
+                        </tr>
+                        <tr>
+                            <td>mediaItems</td>
+                            <td>Attached media</td>
+                            <td>Collection [MediaItem]</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>tags</td>
+                            <td>Post tags </td>
+                            <td>Collection [Tag]</td>
+                        </tr>
+                        <tr>
+                            <td>metadata</td>
+                            <td>Post metadata</td>
+                            <td>Entity\Metadata</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>createdAt</td>
+                            <td>Date added</td>
+                            <td>DateTime</td>
+                        </tr>
+                        <tr>
+                            <td>updatedAt</td>
+                            <td>Date modified</td>
+                            <td>DateTime</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><em>MediaItem</em></p>
+            <div class="datagrid">
+                <table style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>path</td>
+                            <td>Relative path to media file</td>
+                            <td>string</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>absolutePath</td>
+                            <td>Absolute path to media file</td>
+                            <td>string</td>
+                        </tr>
+                        <tr>
+                            <td>metadata</td>
+                            <td>Media metadata</td>
+                            <td>Entity\Metadata</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><em>Page</em></p>
+            <div class="datagrid">
+                <table style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>title</td>
+                            <td>Title</td>
+                            <td>string</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>slug</td>
+                            <td>Page URL slug</td>
+                            <td>string</td>
+                        </tr>
+                        <tr>
+                            <td>queries</td>
+                            <td>Page data queries</td>
+                            <td>Collection [PageQuery]</td>
+                        </tr>
+                        <tr class="alt">
+                            <td>inMenu</td>
+                            <td>Include in menu</td>
+                            <td>boolean</td>
+                        </tr>
+                        <tr>
+                            <td>view</td>
+                            <td>Page view template</td>
+                            <td>string</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/scripts/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="assets/scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/scripts/main.js"></script>
+</body>
+</html>
