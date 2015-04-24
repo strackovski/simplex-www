@@ -22,5 +22,5 @@ $(function() {
 
 $(document).ready(function(){
     $('body').removeClass('nojs');
-    $('.landing').css('height', $(window).height() - 100);
+    $('.landing .jumbotron').css('margin-top', $(window).height() / 2 -  $('.landing .jumbotron').height());
 });
