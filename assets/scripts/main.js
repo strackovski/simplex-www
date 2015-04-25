@@ -23,4 +23,17 @@ $(function() {
 $(document).ready(function(){
     $('body').removeClass('nojs');
     $('.landing .jumbotron').css('margin-top', $(window).height() / 2 -  $('.landing .jumbotron').height());
+
+    $('.nav-open').on('click', function (e) {
+        e.preventDefault();
+        $('body').toggleClass('expanded');
+        $('.nav-open').toggleClass('opened');
+    });
+
+    $('.docs-nav li a').on('click', function(e) {
+        $('body').removeClass('expanded');
+        $('.nav-open').toggleClass('opened');
+        $('.docs-nav li.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
 });
