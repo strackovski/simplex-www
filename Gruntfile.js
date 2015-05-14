@@ -34,7 +34,8 @@ module.exports = function(grunt) {
                     'release/index.html': 'source/index.html',
                     'release/docs.html': 'source/docs.html',
                     'release/download.html': 'source/download.html',
-                    'release/404.html': 'source/404.html'
+                    'release/404.html': 'source/404.html',
+                    'release/500.html': 'source/500.html'
                 }
             }
         },
@@ -45,6 +46,26 @@ module.exports = function(grunt) {
                     {expand: true, cwd: 'source/assets/images/', src: ['**'], dest: 'release/assets/images/'}
                 ]
             }
+        },
+        'string-replace': {
+            dist: {
+                files: {
+                    'release/index.html': 'source/index.html',
+                    'release/docs.html': 'source/docs.html',
+                    'release/download.html': 'source/download.html',
+                    'release/404.html': 'source/404.html',
+                    'release/500.html': 'source/500.html'
+                },
+                options: {
+                    replacements: [{
+                        pattern: /<!-- @import (.*?) -->/ig,
+                        replacement: function (match, p1) {
+                            //return grunt.file.read(grunt.config.get('dist') + p1);
+                            return grunt.file.read('domain/' + p1);
+                        }
+                    }]
+                }
+            }
         }
     });
 
@@ -52,5 +73,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.registerTask('default', ['uglify', 'cssmin', 'htmlmin', 'copy']);
+    grunt.loadNpmTasks('grunt-string-replace');
+    grunt.registerTask('default', ['uglify', 'cssmin', 'htmlmin', 'copy', 'string-replace']);
 };
