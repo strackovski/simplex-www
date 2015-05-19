@@ -3,45 +3,46 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="description" content="Simplex Web Content Management System">
     <meta name="author" content="Vladimir Strackovski">
     <title>Simplex WCM | NV3</title>
-    <link rel="stylesheet" href="assets/styles/bootstrap.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Monda:400,700|Open+Sans:400italic,700,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/fonts/font-awesome-4.1.0/css/font-awesome.css"/>
-    <link rel="stylesheet" href="assets/styles/main.css"/>
+    <!-- @include head.html -->
 </head>
 <body class="nojs">
-<!-- @import tracking.md -->
+    <!-- @import tracking.md -->
     <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container-fluid">
             <ul class="nav navbar-nav navbar-left">
                 <li>
                     <a class="navbar-brand" href="/simplex" title="Home">
-                        <span>SIMPLEX</span>
-                        <i class="fa fa-home"></i>
+                        <span>SIMPLEX</span><i class="fi fi-home-octicon"></i>
+                    </a>
+                <li class="active">
+                    <a href="/simplex/download" title="Download">
+                        <span>Download</span><i class="fi fi-cloud-download"></i>
                     </a>
                 </li>
-                <li class="active"><a href="/simplex/download" title="Download">
-                    <span>Download</span>
-                    <i class="fa fa-download"></i>
-                </a></li>
-                <li><a href="/simplex/docs" title="Download">
-                    <span>Documentation</span>
-                    <i class="fa fa-book"></i>
-                </a></li>
+                <li>
+                    <a href="/simplex/docs" title="Download">
+                        <span>Documentation</span><i class="fi fi-book-octicon"></i>
+                    </a>
+                </li>
             </ul>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="http://www.nv3.si" class="brand-logo" title="See more at NV3"><img src="assets/images/nv3_logo_inv_blue.png" alt="NV3"/></a></li>
+                    <li>
+                        <a href="http://www.nv3.si" class="brand-logo" title="See more at NV3">
+                            <img src="assets/images/nv3_logo_inv_blue.png" alt="NV3"/>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="pages">
-        <div class="gradient-page">
-            <div class="page page00">
+    <div class="container-fluid tabs">
+        <div class="row">
+            <div class="col-xs-12 full-page">
                 <div class="jumbotron text-center">
                     <div class="">
                         <h1 class="extra-pad">Download Simplex</h1>
@@ -50,59 +51,62 @@
                 </div>
             </div>
         </div>
-        <div class="page page04">
+    </div>
+
+    <div class="container-fluid tabs">
+        <div class="row">
             <div class="col-xs-12 text-center">
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="active"><a href="#setup" role="tab" data-toggle="tab">Packages</a></li>
+                    <li><a href="#themes" role="tab" data-toggle="tab">Themes</a></li>
                     <li><a href="#extensions" role="tab" data-toggle="tab">Extensions</a></li>
-                    <li><a href="#customizations" role="tab" data-toggle="tab">Custom</a></li>
                 </ul>
 
                 <div class="tab-content">
                     <div class="tab-pane active" id="setup">
                         <div class="panel-inner row">
                             <div class="col-xs-12 col-sm-6 item">
-                                <h4><i class="fa fa-git fa-2x"></i> Source Repository</h4>
-                                <p></p>
+                                <h4><i class="fi fi-mark-github fi-2x"></i> Source Repository</h4>
+                                <p>Simplex source code and git repository are hosted on GitHub. Visit our repository to learn more about the project, view source and clone or fork it.</p>
                                 <a target="_blank" href="https://github.com/strackovski/simplex" class="btn btn-block btn-default">Source</a>
                             </div>
                             <div class="col-xs-12 col-sm-6 item">
-                                <h4><i class="fa fa-archive fa-2x"></i> Archived Package</h4>
-                                <p></p>
+                                <h4><i class="fi fi-cloud-download fi-2x"></i> Archived Package</h4>
+                                <p>Simplex can also be downloaded as an archived package. Click download below to get the latest stable version and refer to the manual for installation.</p>
                                 <a target="_blank" href="https://github.com/strackovski/simplex/archive/master.zip" class="btn btn-block btn-default">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="themes">
+                        <div class="panel-inner row">
+                            <div class="col-xs-12 col-sm-6 item">
+                                <h4><i class="fi fi-2x fi-paintcan"></i> Site Themes</h4>
+                                <p>Simplex comes with an easily customizable default web site theme. Additional themes developed for Simplex can be found on our GitHub page.</p>
+                                <a href="https://github.com/strackovski/simplex" class="btn btn-block btn-default">View Themes</a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 item">
+                                <h4><i class="fi fi-2x fi-brush-oi"></i> Admin Themes</h4>
+                                <p>There is only one theme for the administration section, but it is easy to create your own. If you need any help, please use our issue tracker on GitHub.</p>
+                                <a href="https://github.com/strackovski/simplex/issues" class="btn btn-block btn-default">Learn More</a>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane" id="extensions">
                         <div class="panel-inner row">
-                            <div class="col-xs-12 col-sm-6 item">
-                                <h4><i class="fa fa-2x fa-cube"></i> Extensions</h4>
-                                <p></p>
-                                <a href="#" class="btn btn-block btn-default">Learn More</a>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 item">
-                                <h4><i class="fa fa-2x fa-puzzle-piece"></i> Themes</h4>
-                                <p></p>
-                                <a href="#" class="btn btn-block btn-default">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="customizations">
-                        <div class="panel-inner row">
                             <div class="col-xs-12 col-sm-4 item">
-                                <h4><i class="fa fa-2x fa-code"></i> Integrations</h4>
-                                <p></p>
+                                <h4><i class="fi fi-2x fi-circuit-board"></i> Integrations</h4>
+                                <p>Additional web service integrations for Simplex are available on request.</p>
                                 <a href="#" class="btn btn-block btn-default">Learn More</a>
                             </div>
                             <div class="col-xs-12 col-sm-4 item">
-                                <h4><i class="fa fa-2x fa-columns"></i> Templates</h4>
-                                <p></p>
-                                <a href="#" class="btn btn-block btn-default">Learn More</a>
+                                <h4><i class="fi fi-2x fi-plug"></i> Plug-ins</h4>
+                                <p>Extend Simplex content model by adding new content types and relations.</p>
+                                <a href="https://github.com/strackovski/simplex/wiki/Content-Types" class="btn btn-block btn-default">Learn More</a>
                             </div>
                             <div class="col-xs-12 col-sm-4 item">
-                                <h4><i class="fa fa-2x fa-lightbulb-o"></i> Other</h4>
-                                <p></p>
-                                <a href="#" class="btn btn-block btn-default">Learn More</a>
+                                <h4><i class="fi fi-2x fi-lab"></i> Other</h4>
+                                <p>Please let us know about any feature or theme requests on our <a href="#">issue tracker</a>.</p>
+                                <a href="https://github.com/strackovski/simplex/issues" class="btn btn-block btn-default">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -110,9 +114,6 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript" src="assets/scripts/jquery-1.11.1.js"></script>
-    <script type="text/javascript" src="assets/scripts/bootstrap.js"></script>
-    <script type="text/javascript" src="assets/scripts/main.js"></script>
+    <!-- @include footer.html -->
 </body>
 </html>

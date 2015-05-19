@@ -3,36 +3,183 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="description" content="Simplex Web Content Management System">
     <meta name="author" content="Vladimir Strackovski">
     <title>Simplex WCM | NV3</title>
-    <link rel="stylesheet" href="assets/styles/bootstrap.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Monda:400,700|Open+Sans:400italic,700,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/fonts/font-awesome-4.1.0/css/font-awesome.css"/>
-    <link rel="stylesheet" href="assets/styles/main.css"/>
+    <!-- @include head.html -->
 </head>
-
 <body class="nojs">
-<!-- @import tracking.md -->
-    <div class="landing">
-        <div class="jumbotron container text-center">
-            <div class="row content">
-                <div class="col-xs-6">
-                    <a class="round" href="/simplex/download" title="Download">
-                        <h2>Download</h2>
+    <!-- @import tracking.md -->
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="active">
+                    <a class="navbar-brand" href="/simplex" title="Home">
+                        <span>SIMPLEX</span><i class="fi fi-home-octicon"></i>
                     </a>
+                </li>
+                <li>
+                    <a href="/simplex/download" title="Download">
+                        <span>Download</span><i class="fi fi-cloud-download"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/simplex/docs" title="Download">
+                        <span>Documentation</span><i class="fi fi-book-octicon"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="http://www.nv3.si" class="brand-logo" title="See more at NV3">
+                            <img src="assets/images/nv3_logo_inv_blue.png" alt="NV3"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid content hero">
+        <div class="row">
+            <div class="col-xs-12 exp text-center">
+                <h1>SIMPLEX</h1>
+                <p class="sub-title">Web Publishing Made Easy</p>
+                <p>Next-generation web content management and publishing system that is easy to configure, use and extend.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid full-section section">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-0 sidebar">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-12">
+                        <h3>Latest Version</h3>
+                        <ul class="bullets">
+                            <li><a href="http://github.com/strackovski/simplex">Stable: 1.x</a></li>
+                            <li><a href="http://github.com/strackovski/simplex">Development: 2.x</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-12">
+                        <h3>Latest News</h3>
+                        <ul class="bullets">
+                            <li><a href="http://github.com/strackovski/simplex">Stable: 1.x</a></li>
+                            <li><a href="http://github.com/strackovski/simplex">Development: 2.x</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-xs-6">
-                    <a class="round" href="/simplex/docs" title="Documentation">
-                        <h2>Docs</h2>
-                    </a>
+            </div>
+
+            <div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-0 col-md-9 col-md-offset-0">
+                <div class="row multiple">
+                    <div class="col-xs-12 col-md-6">
+                        <h2>What is Simplex</h2>
+                        <p>Simplex is a modern web content management and publishing web app enabling users to create, curate and publish content online with ease, requiring minimal technical knowledge.</p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <h2>Why Simplex</h2>
+                        <p>Ease of <strong>effective</strong> use is the main goal of Simplex. Not every project benefits from web content simplification, but there are many that do - and Simplex aims to meet such requirements. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>Strong Foundation</h2>
+                        <p>
+                            Simplex is built on strong foundations with great tools that are available across the app for you to
+                            use, from templating engines, frontend frameworks to semantic web support and more. Based on proven
+                            technology including Symfony2 components, Doctrine, Twig, Silex and others. It uses Composer for
+                            dependency management and is developed with best practices in mind and therefore easy to customize
+                            and extend.
+                        </p>
+                        <img class="mgb-10" src="assets/images/fe-logos.jpg" alt=""/>
+                    </div>
+                    <div class="col-xs-12 mgb-20">
+                        <h2>Getting Started</h2>
+                        <p>To get started with Simplex you can take it for a <a target="_blank" href="http://simplex.envee.eu/admin/">test drive</a>, <a href="https://github.com/strackovski/simplex">browse
+                        the source code</a> or <a href="/simplex/docs">learn</a> how to download, install and play with it.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="assets/scripts/jquery-1.11.1.js"></script>
-    <script type="text/javascript" src="assets/scripts/bootstrap.js"></script>
-    <script type="text/javascript" src="assets/scripts/main.js"></script>
+
+    <div class="container-fluid full-section section theater">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0">
+                <h2>How it feels</h2>
+                <img src="http://placehold.it/1280x720" alt=""/>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid full-section features section">
+        <div class="row adj">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-12 col-md-offset-0">
+                <h2>Features <span>- Core Version</span></h2>
+            </div>
+        </div>
+        <div class="row adj list">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 list-col">
+                <h4><i class="fi fi-pen-btm fi-2x"></i> Content features</h4>
+                <ul>
+                    <li>Intuitive content management and publishing</li>
+                    <li>Powerful content publishing options</li>
+                    <li>Transparent support for multimedia content</li>
+                    <li>Automatic content enrichment and classification</li>
+                    <li>Per-post keywords and metadata specification</li>
+                </ul>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 list-col">
+                <h4><i class="fi fi-book-open-btm fi-2x"></i> Page features</h4>
+                <ul>
+                    <li>Structure defined with user-defined SEO-friendly URLs</li>
+                    <li>Page Queries define dynamic data to display on pages</li>
+                    <li>Static content can be included in pages directly</li>
+                    <li>Page-specific metadata supported for every page</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row adj list">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 list-col">
+                <h4><i class="fi fi-camera-btm fi-2x"></i> Media features</h4>
+                <ul>
+                    <li>Drag and drop media import</li>
+                    <li>Automatic media thumbnail generation</li>
+                    <li>Automatic media metadata extraction</li>
+                    <li>Automatic image watermarking if enabled</li>
+                    <li>User defined image sampling quality</li>
+                </ul>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 list-col">
+                <h4><i class="fi fi-tools fi-2x"></i> Templating and theming</h4>
+                <ul>
+                    <li>Supports templates written in pure PHP and Twig</li>
+                    <li>Templates receive data as defined in pages</li>
+                    <li>Creating your own templates is as easy as HTML</li>
+                    <li>Assetic is available for theme asset management</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row adj list">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 list-col">
+                <h4><i class="fi fi-user-female fi-2x"></i> Users and security</h4>
+                <ul>
+                    <li>User groups for editors and administrators</li>
+                    <li>Full user profile for each user</li>
+                    <li>Support for public user registration</li>
+                    <li>Secure password and credentials storage</li>
+                    <li>Account activation and reactivation via email</li>
+                </ul>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 list-col">
+                <h4><i class="fi fi-circuit-board fi-2x"></i> Integration</h4>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- @include footer.html -->
 </body>
 </html>

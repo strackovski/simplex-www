@@ -57,13 +57,20 @@ module.exports = function(grunt) {
                     'release/500.html': 'source/500.html'
                 },
                 options: {
-                    replacements: [{
-                        pattern: /<!-- @import (.*?) -->/ig,
-                        replacement: function (match, p1) {
-                            //return grunt.file.read(grunt.config.get('dist') + p1);
-                            return grunt.file.read('domain/' + p1);
+                    replacements: [
+                        {
+                            pattern: /<!-- @import (.*?) -->/ig,
+                            replacement: function (match, p1) {
+                                return grunt.file.read('domain/' + p1);
+                            }
+                        },
+                        {
+                            pattern: /<!-- @include (.*?) -->/ig,
+                            replacement: function (match, p1) {
+                                return grunt.file.read('source/includes/' + p1);
+                            }
                         }
-                    }]
+                    ]
                 }
             }
         }
